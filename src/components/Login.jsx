@@ -1,8 +1,8 @@
 
-export default function Login(isLoggedIn) {
+export default function Login(setIsLoggedIn) {
 
   return (
-    <form onSubmit = (()=>isLoggedIn(true))>
+    <form onSubmit = (()=>setIsLoggedIn(true))>
       <label for="name">Username: </label>
       <input type="text" id="name"></input>
       <label for="password">Password: </label>
