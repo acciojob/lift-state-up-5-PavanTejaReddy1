@@ -4,13 +4,20 @@ import './../styles/App.css';
 import { useState } from 'react'
 import Login from "./Login";
 
-const App = () => {
+function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <div>
-    <login setIsLoggedIn={setIsLoggedIn}/>
+      {isLoggedIn ? (
+        <h1>Parent Component</h1>
+      ) : (
+        <Login setIsLoggedIn={setIsLoggedIn} />
+      )}
     </div>
-  )
+  );
 }
 
 export default App
+
+
