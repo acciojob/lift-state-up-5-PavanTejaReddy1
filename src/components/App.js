@@ -9,11 +9,8 @@ function App() {
 
   return (
     <div>
-      {isLoggedIn ? (
-        <h1>Parent Component</h1>
-      ) : (
-        <Login setIsLoggedIn={setIsLoggedIn} />
-      )}
+    <h1>Parent Component</h1>
+    <Login setIsLoggedIn={setIsLoggedIn} />
     </div>
   );
 }
