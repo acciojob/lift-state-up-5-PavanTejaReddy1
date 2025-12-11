@@ -11,6 +11,7 @@ export default function Login({setIsLoggedIn}) {
       <input type="text" id="name"></input>
       <label htmlFor="password">Password: </label>
       <input type="password" id="password"></input>
+      <input type="submit" value="Login"></input>
     </form>
   )
 }
