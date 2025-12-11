@@ -11,6 +11,7 @@ function App() {
     <div>
     <h1>Parent Component</h1>
     <Login setIsLoggedIn={setIsLoggedIn} />
+  {isLoggedIn ? <p>You are logged in!</p> : null}
     </div>
   );
 }
